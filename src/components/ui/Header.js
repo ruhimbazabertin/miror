@@ -73,13 +73,14 @@ const ElevationScroll = (props) => {
             fontFamily: "Raleway", 
         },
         button: {
+            ...theme.typography.estimate,
             borderRadius: "50px",
             marginLeft: "50px",
             marginRight: "25px",
-            fontFamily: "pacifico",
-            fontSize: "1rem",
-            textTransform: "none",
             height: "45px",
+            "&:hover": {
+                backgroundColor: theme.palette.secondary.light,
+            }
         },
         menu: {
             backgroundColor: theme.palette.common.blue,
