@@ -282,7 +282,7 @@ const Header = (props) => {
                 <MenuItem 
                 onClick={() => {handleClose(); props.setValue(1)}}
                 component={Link} to="/mobileapps"
-                classes={{root: classes.menuItem}}>Mobile App Development</MenuItem>
+                classes={{root: classes.menuItem}}>iOS/Android App Development</MenuItem>
                 <MenuItem 
                 onClick={() => {handleClose(); props.setValue(1)}}
                 component={Link} to="/websites"
