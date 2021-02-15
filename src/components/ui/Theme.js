@@ -52,6 +52,11 @@ export default createMuiTheme({
                 fontWeight: 300,
                 color: arcGrey,
               },
+              subtitle2: {
+                color: "white",
+                fontWeight: 300,
+                fontSize: "1.25rem"
+              },
               learnButton: {
                 borderColor: arcBlue,
                 color: arcBlue,
@@ -65,11 +70,6 @@ export default createMuiTheme({
                 fontWeight: 500,
                 fontFamily: "Raleway",
                 color: arcBlue
-              },
-              subtitle2: {
-                color: "white",
-                fontWeight: 300,
-                fontSize: "1.25rem"
               },
     }
 });
