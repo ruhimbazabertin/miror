@@ -17,7 +17,12 @@ const  App = () => {
                     <BrowserRouter>
                     <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
                     <Switch> 
-                        <Route exact path="/" component={LandingPage} />
+                        <Route exact path="/" 
+                        render={(props) =>
+                        <LandingPage 
+                        {...props}
+                        setValue={setValue} 
+                        setSelectedIndex={setSelectedIndex} />} />
                      <Route exact path="/services" component={() =>(<div><h2>This is a services component</h2></div>)} />
                      <Route exact path="/customsoftware" component={() =>(<div><h2>This is a customSoftware component</h2></div>)} />
                         <Route exact path="/mobileapps" component={() =>(<div><h2>This is a mobileApps component</h2></div>)} />
