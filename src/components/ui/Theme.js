@@ -57,6 +57,12 @@ export default createMuiTheme({
                 fontWeight: 300,
                 fontSize: "1.25rem"
               },
+              body1: {
+                fontSize: "1.5rem",
+                //Gray color causes the problem on service menue check it later
+                color: arcGrey,
+                fontWeight: 300,
+              },
               learnButton: {
                 borderColor: arcBlue,
                 color: arcBlue,
