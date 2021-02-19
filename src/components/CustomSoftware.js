@@ -152,7 +152,7 @@ const CustomSoftware = (props) => {
          className={classes.rowContainer}
          justify="center"
          style={{marginTop: "15em", marginBottom: "20em"}}>
-        <Grid item contaienr direction="column" md alignItems="center" style={{maxWidth: "40em"}}>
+        <Grid item container direction="column" md alignItems="center" style={{maxWidth: "40em"}}>
         <Grid item>
         <Typography variant="h2">Save Energy</Typography>
         </Grid>
@@ -175,7 +175,7 @@ const CustomSoftware = (props) => {
             <img src={stopwatch} alt="stopwatch" />
         </Grid>
         </Grid>
-        <Grid item contaienr direction="column" md alignItems="center" style={{maxWidth: "40em"}}>
+        <Grid item container direction="column" md alignItems="center" style={{maxWidth: "40em"}}>
         <Grid item>
         <Typography variant="h2">Save Money</Typography>
         </Grid>
