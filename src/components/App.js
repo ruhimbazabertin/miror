@@ -11,6 +11,7 @@ import Services  from './Services';
 import CustomSoftware from './CustomSoftware';
 import MobileApps  from './MobileApps';
 import Websites    from './Websites';
+import About       from './About';
 import Revolution  from './Revolution';
 
 const  App = () => {
@@ -52,13 +53,18 @@ const  App = () => {
                             {...props}
                             setValue={setValue} 
                             setSelectedIndex={setSelectedIndex} />}  />
-                        <Route exact path="/revolution"
+  <Route exact path="/revolution"
                                                   render={(props) =>
                                                     <Revolution 
                                                     {...props}
                                                     setValue={setValue} 
                                                     setSelectedIndex={setSelectedIndex} />} />
-                        <Route exact path="/about" component={() =>(<div><h2>This is about us component</h2></div>)} />
+                        <Route exact path="/about"
+                          render={(props) =>
+                            <About 
+                            {...props}
+                            setValue={setValue} 
+                            setSelectedIndex={setSelectedIndex} />} />
                         <Route exact path="/contact" component={() =>(<div><h2>This is a contact us component</h2></div>)} />
                         <Route exact path="/estimate" component={() =>(<div><h2>This is a estimate component</h2></div>)} />
                     </Switch>
