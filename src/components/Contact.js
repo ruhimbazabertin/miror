@@ -103,7 +103,7 @@ const Contact = (props) => {
     const [loading, setLoading] = useState(false);
     const [alert, setAlert]     = useState({
         open: false, message: "", backgroundColor: ""
-    })
+    });
 
     const onChange = event => {
         let valid;
@@ -230,6 +230,7 @@ const Contact = (props) => {
              InputProps={{disableUnderline: true}}
              className={classes.message}
              multiline
+             placeholder="Tell us more about..."
              rows={10}
              value={message}
              onChange={(event) => setMessage(event.target.value)} />
@@ -255,7 +256,7 @@ const Contact = (props) => {
         {/*Start of dialog component */}
         <Dialog
          style={{zIndex: 100}}
-         fullScreen={matchesXS}
+         fullScreen={matchesSM}
          open={open} onClose={()=> setOpen(false)}
          PaperProps={{
              style: {

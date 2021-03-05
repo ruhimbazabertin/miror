@@ -14,6 +14,7 @@ import Websites    from './Websites';
 import Revolution  from './Revolution';
 import About       from './About';
 import Contact     from './Contact';
+import Estimate    from './Estimate';
 
 
 const  App = () => {
@@ -73,7 +74,12 @@ const  App = () => {
                                  {...props}
                                 setValue={setValue} 
                                 setSelectedIndex={setSelectedIndex} />} />
-                        <Route exact path="/estimate" component={() =>(<div><h2>This is a estimate component</h2></div>)} />
+                        <Route exact path="/estimate"
+                                                   render={(props) =>
+                                                    <Estimate
+                                                    {...props}
+                                                   setValue={setValue} 
+                                                   setSelectedIndex={setSelectedIndex} />} />
                     </Switch>
                    {/* footer component injection*/}
                     <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
