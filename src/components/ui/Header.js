@@ -18,7 +18,7 @@ import List from  '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import logo from '../../assets/logo.svg';
+import lens from '../../assets/lens.png';
 
 const ElevationScroll = (props) => {
     const { children } = props;
@@ -47,6 +47,8 @@ const ElevationScroll = (props) => {
         },
         logo: {
             height: "8em",
+            textTransform: "none",
+            textDecoration: "none",
             [theme.breakpoints.down("md")] : {
                 height: "7em",
             },
@@ -395,7 +397,8 @@ const Header = (props) => {
         <AppBar position="fixed" className={classes.appbar}>
             <Toolbar disableGutters>
                 <Button component={Link} to="/" disableRipple onClick={()=> props.setValue(0)} className={classes.logContainer}>
-            <img  alt="company logo" className={classes.logo} src={logo} />
+                <img  alt="company logo" className={classes.logo} src={lens} />
+
             </Button>
                 {matches ? drawer: tabs}
             </Toolbar>

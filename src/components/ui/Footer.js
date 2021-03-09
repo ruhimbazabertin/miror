@@ -6,6 +6,7 @@ import Hidden from '@material-ui/core/Hidden';
 import facebook  from '../../assets/facebook.svg';
 import twitter   from '../../assets/twitter.svg';
 import instagram from '../../assets/instagram.svg';
+import lens      from '../../assets/lens.png';
 
 import footerAdornment from '../../assets/Footer Adornment.svg';
 
@@ -126,7 +127,7 @@ const Footer = (props) => {
                 </Grid>
                 </Hidden>
                 <img alt="black decorative slash"
-                src={footerAdornment}
+                src={lens}
                 className={classes.adornment} />
 
                 <Grid container justify="flex-end" spacing={2} className={classes.socialContainer}>
